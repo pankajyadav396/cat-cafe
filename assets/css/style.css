@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'norwester';
+    src: url(../fonts/norwester.otf);
+}
+
+.ff-norwester {
+    font-family: 'norwester', sans-serif;
+}
+
+.ff-inter {
+    font-family: 'inter', sans-serif;
+}
+
+.pt-26 {
+    padding-top: 26px;
+}
+
+.custom-container {
+    max-width: 1172px !important;
+}
+
+.custom-container-2 {
+    max-width: 1140px !important;
+}
+
+.logo-img {
+    max-width: 115.31px;
+}
+
+.hand-sign-1 {
+    bottom: -40px !important;
+}
+
+.max-w-640 {
+    max-width: 640px;
+}
+
+.max-w-800 {
+    max-width: 800px;
+}
+
+.max-w-480 {
+    max-width: 480px;
+}
+
+.max-w-250 {
+    max-width: 250px;
+}
+
+.bg-cloud {
+    background-image: url(../images/png/cat-thought.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    min-height: 250px;
+}
+
+.lamp-img {
+    max-width: 420px;
+    right: -50px;
+}
+
+.ellipse-header {
+    max-width: 110px;
+}
+
+.-z-1 {
+    z-index: -1;
+}
+
+.header-cafe {
+    max-width: 500px;
+}
+
+.max-w-1600 {
+    max-width: 1600px;
+}
+
+.box-about {
+    outline: 4px solid var(--color-ink);
+    padding: 16px 12px;
+    border-radius: 13px;
+    box-shadow: 0px 22px 0px 0px var(--color-ink);
+}
+
+.mission-bg-ellipse {
+    top: 50%;
+    transform: translateY(-55%);
+}
+
+.journey-bg-ellipse {
+    top: 5%;
+    transform: translateY(-2%);
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.max-w-118 {
+    max-width: 118px;
+}
+
+.img-girl {
+    max-width: 209px;
+}
+
+/* ============================ BENEFITS ============================ */
+.cat-lover {
+    max-width: 530px;
+    min-height: 400px;
+    border-radius: 13px;
+    outline: 4px solid var(--color-ink);
+    box-shadow: 0px 22px 0px 0px var(--color-ink);
+    padding: 16px 14px 30px 14px;
+}
+
+.cats {
+    width: 201px;
+    height: 201px;
+}
+
+.benefits-ellipse2 {
+    bottom: -100px;
+}
+
+.sign-journey {
+    left: 5%;
+    bottom: 33%;
+}
+
+.thank-box {
+    max-width: 1140px;
+    border-radius: 13px;
+    outline: 4px solid var(--color-ink);
+    box-shadow: 0px 22px 0px 0px var(--color-ink);
+    background-color: var(--color-orange);
+    padding: 22px 20px 16px 20px;
+}
+
+.max-w-796 {
+    max-width: 796px;
+}
+
+.small-bulb {
+    position: absolute;
+    max-width: 40px;
+    top: 0%;
+    right: 4%;
+    z-index: -2;
+}
+
+.big-bulb {
+    position: absolute;
+    max-width: 40px;
+    top: 0%;
+    left: 4%;
+    z-index: -2;
+}
+
+/* ================================    STAYCONNECTED   ============================== */
+.stay-input {
+    border: 3px solid var(--color-ink);
+    border-radius: 72px;
+    padding: 20px 20px;
+    outline: unset !important;
+}
+
+.submit-button {
+    background: var(--color-orange);
+    border-radius: 72px;
+    padding: 20px 20px;
+    border: none;
+    box-shadow: 0px 4px 25.6px 0px var(--color-orange);
+}
+
+.pointer-event-none {
+    pointer-events: none !important;
+}
+
+input {
+    color: var(--color-ink) !important;
+}
+
+::placeholder {
+    font-family: "Inter", sans-serif !important;
+    font-size: var(--text-md) !important;
+    color: var(--color-ink) !important;
+    line-height: 160%;
+}
+
+.stay-left-ellipse {
+    bottom: 5%;
+}
+
+.stay-right-ellipse {
+    top: -6%;
+}
+
+.stay-foot-ellipse {
+    right: 5%;
+    top: 24%;
+}
+
+.stay-men-img {
+    max-width: 370px;
+    max-height: 373px;
+}
+
+.mb-max-24 {
+    margin-bottom: 24px;
+}
+
+.max-w-459 {
+    max-width: 459px;
+}
+
+.cat-mission {
+    max-width: 78px;
+}
+
+.max-w-408 {
+    max-width: 408px;
+}
+
+/* ================================  FOOTER =========================== */
+.max-w-155 {
+    max-width: 155px !important;
+}
+
+.gap-footer-links {
+    gap: 24px;
+}
+
+.footer-link {
+    transition: all .3s linear;
+}
+
+.footer-link:hover {
+    scale: 1.1;
+    transform: translateY(-4px);
+}
+
+.h-1 {
+    height: 1px;
+}
+
+@media (min-width:480px) {
+    .bg-cloud {
+        min-height: 305px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width:576px) {
+    .logo-img {
+        max-width: 155.5px;
+    }
+
+    .lamp-img {
+        max-width: 510px;
+        right: 0;
+    }
+
+    .ellipse-header {
+        max-width: 188px;
+    }
+
+    .cat-lover {
+        min-height: 480px;
+        padding: 24px 44px 48px 44px;
+    }
+
+    .cat-mission {
+        max-width: 100px;
+    }
+
+    .img-girl {
+        max-width: 259px;
+    }
+}
+
+@media (min-width:768px) {
+    .cat-lover {
+        min-height: 506px;
+        padding: 24px 57px 76px 56px;
+    }
+
+    .lamp-img {
+        max-width: 510px;
+        right: 50px;
+    }
+
+    .cats {
+        width: 201px;
+        height: 201px;
+    }
+
+    .gap-footer-links {
+        gap: 38px;
+    }
+
+    .img-girl {
+        max-width: 300px;
+    }
+
+    .stay-bg-ellipse {
+        max-width: 710px;
+        bottom: 10%;
+        max-height: 620px;
+    }
+
+    .small-bulb {
+        max-width: 75px;
+        top: 0%;
+        right: 4%;
+        z-index: -2;
+    }
+
+    .thank-box {
+        padding: 48px 58px 31px 55px;
+    }
+
+    .big-bulb {
+        position: absolute;
+        max-width: 75.1px;
+        top: 0%;
+        left: 4%;
+        z-index: -2;
+    }
+
+}
+
+@media (min-width:992px) {
+    .header-cafe {
+        max-width: 550px;
+    }
+
+    .cat-lover {
+        min-height: 686px;
+    }
+
+    .mb-lg-36 {
+        margin-bottom: 36px !important;
+    }
+
+    .mission-bg-ellipse {
+        top: 50%;
+        transform: translateY(-43%);
+    }
+
+    .img-girl {
+        max-width: 459px;
+    }
+
+    .journey-bg-ellipse {
+        top: 50%;
+        transform: translateY(-36%);
+    }
+
+    .box-about {
+        padding: 25px 75px 20px 35px;
+    }
+
+    .cat-mission {
+        max-width: 118px !important;
+    }
+
+    .cats {
+        width: 301px;
+        height: 301px;
+    }
+}
+
+@media (min-width:1200px) {
+    .header-cafe {
+        max-width: 610px;
+        top: 399px;
+        position: absolute;
+    }
+
+    .max-w-555 {
+        max-width: 555px;
+    }
+
+    .journey-bg-ellipse {
+        transform: translateY(-31%);
+    }
+
+    .lamp-img {
+        max-width: 712px;
+    }
+}
+
+@media (min-width:1350px) {
+    .header-cafe {
+        max-width: 710px;
+        top: 344px;
+    }
+
+    .journey-bg-ellipse {
+        transform: translateY(-42%);
+    }
+
+    .lamp-img {
+        max-width: 712px;
+    }
+}

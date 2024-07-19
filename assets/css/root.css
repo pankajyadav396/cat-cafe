@@ -1,0 +1,136 @@
+:root {
+    /* font-size */
+    --text-base: 14px;
+    --text-md: 16px;
+    --text-lg: 18px;
+    --text-xl: 22px;
+    --text-2xl: 40px;
+    --text-3xl: 42px;
+
+    /* color */
+    --color-purple: #A89BB7;
+    --color-lightorange: #F9AB97;
+    --color-cream: #FCFBE3;
+    --color-orange: #F87B54;
+    --color-lightgreen: #6FCACF;
+    --color-grey: #CED7DC;
+    --color-ink: #09384E;
+}
+
+.text-purple {
+    color: var(--color-purple);
+}
+
+.bg-purple {
+    background-color: var(--color-purple);
+}
+
+.text-lightorange {
+    color: var(--color-lightorange);
+}
+
+.text-orange {
+    color: var(--color-orange);
+}
+
+.text-cream {
+    color: var(--color-cream);
+}
+
+.bg-lightgreen {
+    background-color: var(--color-lightgreen);
+}
+
+.text-grey {
+    color: var(--color-grey);
+}
+
+.text-ink {
+    color: var(--color-ink);
+}
+
+.bg-ink {
+    background: var(--color-ink);
+}
+
+.bg-cream {
+    background-color: var(--color-cream);
+}
+
+.lh-120 {
+    line-height: 120%;
+}
+
+.lh-118 {
+    line-height: 118%;
+}
+
+.lh-170 {
+    line-height: 170%;
+}
+
+.lh-121 {
+    line-height: 121%;
+}
+
+.text-md {
+    font-size: var(--text-md);
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+}
+
+.text-3xl {
+    font-size: var(--text-3xl);
+}
+
+.text-xl {
+    font-size: var(--text-xl);
+}
+
+.text-2xl {
+    font-size: var(--text-2xl);
+}
+
+.text-base {
+    font-size: var(--text-base);
+}
+
+@media (min-width:576px) {
+    :root {
+        /* font-size */
+        --text-base: 16px;
+        --text-md: 18px;
+        --text-lg: 20px;
+        --text-xl: 26px;
+        --text-3xl: 52px;
+    }
+}
+
+@media (min-width:768px) {
+    :root {
+        /* font-size */
+        --text-md: 20px;
+        --text-lg: 22px;
+        --text-xl: 31px;
+        --text-2xl: 44px;
+        --text-3xl: 62px;
+    }
+}
+
+@media (min-width:992px) {
+    :root {
+        /* font-size */
+        --text-md: 20px;
+        --text-lg: 22px;
+        --text-xl: 31px;
+        --text-2xl: 48px;
+    }
+}
+
+@media (min-width:1200px) {
+    :root {
+        --text-3xl: 74.07px;
+    }
+}
