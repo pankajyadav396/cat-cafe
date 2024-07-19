@@ -390,6 +390,10 @@ input {
         max-width: 550px;
     }
 
+    .max-w-590 {
+        max-width: 590px;
+    }
+
     .orange-dressed-girl {
         max-width: 408px;
     }
