@@ -172,8 +172,20 @@
     background: var(--color-orange);
     border-radius: 72px;
     padding: 20px 20px;
+    transition: all .3s linear;
     border: none;
     box-shadow: 0px 4px 25.6px 0px var(--color-orange);
+}
+
+.totop-btn {
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 0px 16px 1px var(--color-ink);
+    border-radius: 100%;
+    border: none;
+    display: none;
+    transition: all 300ms;
+    z-index: 10;
 }
 
 .pointer-event-none {
@@ -221,8 +233,8 @@ input {
     max-width: 78px;
 }
 
-.max-w-408 {
-    max-width: 408px;
+.orange-dressed-girl {
+    max-width: 200px;
 }
 
 /* ================================  FOOTER =========================== */
@@ -245,6 +257,29 @@ input {
 
 .h-1 {
     height: 1px;
+}
+
+.benefits-ellipse {
+    top: 170px;
+}
+
+.submit-button:hover {
+    box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 12px !important;
+    background-color: var(--color-ink) !important;
+    background: black 1 !important;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent !important;
 }
 
 @media (min-width:480px) {
@@ -280,12 +315,20 @@ input {
     .img-girl {
         max-width: 259px;
     }
+
+    .orange-dressed-girl {
+        max-width: 240px;
+    }
 }
 
 @media (min-width:768px) {
     .cat-lover {
         min-height: 506px;
         padding: 24px 57px 76px 56px;
+    }
+
+    .submit-button {
+        padding: 24px 20px;
     }
 
     .lamp-img {
@@ -312,6 +355,15 @@ input {
         max-height: 620px;
     }
 
+    .orange-dressed-girl {
+        max-width: 350px;
+    }
+
+    .stay-input {
+        padding: 22px 20px;
+        outline: unset !important;
+    }
+
     .small-bulb {
         max-width: 75px;
         top: 0%;
@@ -336,6 +388,20 @@ input {
 @media (min-width:992px) {
     .header-cafe {
         max-width: 550px;
+    }
+
+    .orange-dressed-girl {
+        max-width: 408px;
+    }
+
+    .stay-input {
+        padding: 31px 20px;
+        outline: unset !important;
+    }
+
+    .stay-men-img {
+        max-width: 5000px;
+        max-height: 443px;
     }
 
     .cat-lover {
