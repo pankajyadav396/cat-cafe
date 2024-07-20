@@ -220,16 +220,21 @@ input {
 }
 
 .stay-left-ellipse {
-    bottom: 5%;
+    bottom: -2%;
 }
 
 .stay-right-ellipse {
-    top: -6%;
+    top: 4%;
 }
 
 .stay-foot-ellipse {
     right: 5%;
     top: 32%;
+}
+
+.benefits-ellipse2 {
+    bottom: -70px;
+    z-index: 3;
 }
 
 .stay-men-img {
@@ -273,10 +278,6 @@ input {
 
 .h-1 {
     height: 1px;
-}
-
-.benefits-ellipse {
-    top: 170px;
 }
 
 .submit-button:hover {
@@ -336,6 +337,10 @@ input {
 
     .orange-dressed-girl {
         max-width: 200px;
+    }
+
+    .benefits-ellipse {
+        top: 90px;
     }
 }
 
@@ -407,6 +412,10 @@ input {
 @media (min-width:992px) {
     .header-cafe {
         max-width: 550px;
+    }
+
+    .benefits-ellipse {
+        top: 170px;
     }
 
     .ellipse-header {
