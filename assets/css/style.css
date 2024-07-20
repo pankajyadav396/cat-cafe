@@ -18,15 +18,15 @@
 }
 
 .custom-container {
-    max-width: 1172px !important;
+    max-width: 1172px;
 }
 
 .custom-container-2 {
-    max-width: 1140px !important;
+    max-width: 1140px;
 }
 
 .logo-img {
-    max-width: 115.31px;
+    max-width: 95px;
 }
 
 .hand-sign-1 {
@@ -50,20 +50,22 @@
 }
 
 .bg-cloud {
-    background-image: url(../images/png/cat-thought.png);
+    background-image: url(../images/webp/cat-thought.webp);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
     min-height: 250px;
+    max-width: 350px;
+    padding-right: 20px;
 }
 
 .lamp-img {
-    max-width: 420px;
-    right: -50px;
+    max-width: 320px;
+    right: 0;
 }
 
 .ellipse-header {
-    max-width: 110px;
+    max-width: 72px;
 }
 
 .-z-1 {
@@ -79,20 +81,16 @@
 }
 
 .box-about {
-    outline: 4px solid var(--color-ink);
-    padding: 16px 12px;
+    max-width: 1140px;
     border-radius: 13px;
+    border: 4px solid var(--color-ink);
     box-shadow: 0px 22px 0px 0px var(--color-ink);
+    padding: 22px 20px 16px 20px;
 }
 
 .mission-bg-ellipse {
     top: 50%;
     transform: translateY(-55%);
-}
-
-.journey-bg-ellipse {
-    top: 5%;
-    transform: translateY(-2%);
 }
 
 .h-100 {
@@ -110,16 +108,16 @@
 /* ============================ BENEFITS ============================ */
 .cat-lover {
     max-width: 530px;
-    min-height: 400px;
+    min-height: 320px;
     border-radius: 13px;
-    outline: 4px solid var(--color-ink);
+    border: 4px solid var(--color-ink);
     box-shadow: 0px 22px 0px 0px var(--color-ink);
     padding: 16px 14px 30px 14px;
 }
 
 .cats {
-    width: 201px;
-    height: 201px;
+    width: 160px;
+    height: 160px;
 }
 
 .benefits-ellipse2 {
@@ -134,7 +132,7 @@
 .thank-box {
     max-width: 1140px;
     border-radius: 13px;
-    outline: 4px solid var(--color-ink);
+    border: 4px solid var(--color-ink);
     box-shadow: 0px 22px 0px 0px var(--color-ink);
     background-color: var(--color-orange);
     padding: 22px 20px 16px 20px;
@@ -184,8 +182,26 @@
     border-radius: 100%;
     border: none;
     display: none;
-    transition: all 300ms;
     z-index: 10;
+    animation-name: backtotop;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes backtotop {
+
+    0%,
+    100% {
+        transform: translateY(10px);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    50% {
+        transform: translateY(-10px);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
 }
 
 .pointer-event-none {
@@ -213,7 +229,7 @@ input {
 
 .stay-foot-ellipse {
     right: 5%;
-    top: 24%;
+    top: 32%;
 }
 
 .stay-men-img {
@@ -234,7 +250,7 @@ input {
 }
 
 .orange-dressed-girl {
-    max-width: 200px;
+    max-width: 180px;
 }
 
 /* ================================  FOOTER =========================== */
@@ -282,25 +298,27 @@ input {
     background-color: transparent !important;
 }
 
-@media (min-width:480px) {
-    .bg-cloud {
-        min-height: 305px;
-        padding-right: 20px;
-    }
+.stay-bg-ellipse {
+    max-width: 678px;
+    bottom: 0%;
+    max-height: 610px;
+}
+
+.max-w-1920 {
+    max-width: 1920px;
 }
 
 @media (min-width:576px) {
     .logo-img {
-        max-width: 155.5px;
+        max-width: 125.5px;
     }
 
     .lamp-img {
         max-width: 510px;
-        right: 0;
     }
 
     .ellipse-header {
-        max-width: 188px;
+        max-width: 110px;
     }
 
     .cat-lover {
@@ -317,11 +335,15 @@ input {
     }
 
     .orange-dressed-girl {
-        max-width: 240px;
+        max-width: 200px;
     }
 }
 
 @media (min-width:768px) {
+    .logo-img {
+        max-width: 155.5px;
+    }
+
     .cat-lover {
         min-height: 506px;
         padding: 24px 57px 76px 56px;
@@ -332,7 +354,6 @@ input {
     }
 
     .lamp-img {
-        max-width: 510px;
         right: 50px;
     }
 
@@ -349,14 +370,12 @@ input {
         max-width: 300px;
     }
 
-    .stay-bg-ellipse {
-        max-width: 710px;
-        bottom: 10%;
-        max-height: 620px;
+    .ellipse-header {
+        max-width: 140px;
     }
 
     .orange-dressed-girl {
-        max-width: 350px;
+        max-width: 250px;
     }
 
     .stay-input {
@@ -390,6 +409,10 @@ input {
         max-width: 550px;
     }
 
+    .ellipse-header {
+        max-width: 188px;
+    }
+
     .max-w-590 {
         max-width: 590px;
     }
@@ -399,7 +422,7 @@ input {
     }
 
     .stay-input {
-        padding: 31px 20px;
+        padding: 31px 29px;
         outline: unset !important;
     }
 
@@ -418,6 +441,7 @@ input {
 
     .mission-bg-ellipse {
         top: 50%;
+        max-width: 800px;
         transform: translateY(-43%);
     }
 
@@ -427,7 +451,8 @@ input {
 
     .journey-bg-ellipse {
         top: 50%;
-        transform: translateY(-36%);
+        transform: translateY(-40%);
+        max-width: 650px;
     }
 
     .box-about {
@@ -451,16 +476,29 @@ input {
         position: absolute;
     }
 
+    .bg-cloud {
+        min-height: 305px;
+        background-size: 100% 100%;
+        max-width: 480px;
+    }
+
     .max-w-555 {
         max-width: 555px;
     }
 
     .journey-bg-ellipse {
-        transform: translateY(-31%);
+        transform: translateY(-40%);
+        max-width: 768px;
     }
 
     .lamp-img {
         max-width: 712px;
+    }
+
+    .stay-bg-ellipse {
+        max-width: 748px;
+        bottom: 2%;
+        max-height: 897px;
     }
 }
 
@@ -476,5 +514,40 @@ input {
 
     .lamp-img {
         max-width: 712px;
+    }
+}
+
+@media (min-width:1400px) {
+    .stay-bg-ellipse {
+        bottom: 5%;
+    }
+}
+
+@media (min-width:1460px) {
+    .mission-bg-ellipse {
+        transform: translateY(-40%);
+        max-width: 1060px;
+    }
+
+    .journey-bg-ellipse {
+        min-width: 860px;
+        transform: translateY(-39%);
+    }
+}
+
+@media (min-width:1700px) {
+    .stay-bg-ellipse {
+        bottom: -16%;
+        min-width: 1000px;
+    }
+
+    .journey-bg-ellipse {
+        min-width: 1020px;
+        transform: translateY(-39%);
+    }
+
+    .mission-bg-ellipse {
+        transform: translateY(-40%);
+        min-width: 1020px;
     }
 }

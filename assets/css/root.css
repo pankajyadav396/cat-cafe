@@ -1,12 +1,12 @@
 :root {
     /* font-size */
     --text-base: 14px;
-    --text-md: 16px;
-    --text-lg: 18px;
+    --text-md: 14px;
+    --text-lg: 16px;
     --text-xl: 22px;
     --text-2xl: 40px;
     --text-3xl: 42px;
-
+    --text-4xl: 36px;
     /* color */
     --color-purple: #A89BB7;
     --color-lightorange: #F9AB97;
@@ -97,14 +97,19 @@
     font-size: var(--text-base);
 }
 
+.text-4xl {
+    font-size: var(--text-4xl);
+}
+
 @media (min-width:576px) {
     :root {
         /* font-size */
         --text-base: 16px;
         --text-md: 18px;
-        --text-lg: 20px;
+        --text-lg: 16px;
         --text-xl: 26px;
-        --text-3xl: 52px;
+        --text-3xl: 48px;
+        --text-4xl: 38px;
     }
 }
 
@@ -112,10 +117,9 @@
     :root {
         /* font-size */
         --text-md: 20px;
-        --text-lg: 22px;
+        --text-lg: 18px;
         --text-xl: 31px;
         --text-2xl: 44px;
-        --text-3xl: 62px;
     }
 }
 
@@ -123,14 +127,16 @@
     :root {
         /* font-size */
         --text-md: 20px;
-        --text-lg: 22px;
         --text-xl: 31px;
         --text-2xl: 48px;
+        --text-3xl: 62px;
+        --text-4xl: 48px;
     }
 }
 
 @media (min-width:1200px) {
     :root {
         --text-3xl: 74.07px;
+        --text-lg: 22.46px;
     }
 }
