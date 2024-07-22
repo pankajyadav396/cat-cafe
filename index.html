@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/root.css">
 </head>
+
 <body>
     <div class="bg-cream max-w-1920 overflow-hidden mx-auto">
         <!-- ==================================  HEADER   ================================= -->
@@ -114,7 +115,8 @@
                                 favorite beverages while
                                 enjoying the delightful company of cats</p>
                         </div>
-                        <div class="col-lg-5 col-md-6 col-sm-7 col-9 mt-4 mt-lg-0 col-11 pe-lg-0 ps-lg-3 position-relative">
+                        <div
+                            class="col-lg-5 col-md-6 col-sm-7 col-9 mt-4 mt-lg-0 col-11 pe-lg-0 ps-lg-3 position-relative">
                             <img src="./assets/images/webp/boy-img-about.webp" alt="about boy img"
                                 aria-label="boy img after text" class="w-100">
                             <img src="./assets/images/webp/hand-sign-of-cat.webp" alt="hand of cat"
@@ -130,10 +132,10 @@
         <!-- =======================        OURMISSION        ========================== -->
         <section class="mt-xl-5 pt-lg-5 bg-cream position-relative z-1">
             <img src="./assets/images/webp/hand-ellipse-left.webp" alt="ellipse hand"
-                class="position-absolute start-0 d-none d-sm-block bottom-0 mb-5 pb-2">
+                class="position-absolute start-0 d-none d-sm-block d-lg-none d-xl-block bottom-0 mb-5 pb-2">
             <img src="./assets/images/webp/right-ellipse-bg.webp" alt="ellipse bg"
                 class="end-0 position-absolute d-none d-lg-block z-n1 mission-bg-ellipse">
-            <div class="container-lg custom-container mt-xxl-5 pt-xl-4">
+            <div class="container-md custom-container mt-xxl-5 pt-xl-4">
                 <div
                     class="row justify-content-xl-end flex-column-reverse flex-lg-row justify-content-center align-items-center">
                     <div class="col-lg-5 col-12  h-100 position-relative">
@@ -162,20 +164,22 @@
                                 cat
                                 cafe extend beyond our
                                 human guests.</p>
-                            <img src="./assets/images/webp/cat.webp" alt="cat img"
-                                class="d-none d-lg-block cat-mission pt-5 mt-xl-5">
+                            <div class="pt-xxl-5 pt-lg-4">
+                                <img src="./assets/images/webp/cat.webp" alt="cat img"
+                                    class="d-none d-lg-block cat-mission ps-4 pt-5 mt-xl-5">
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <!-- =================================   BENEFITS ================================ -->
         <div class=" position-relative bg-cream overflow-x pt-5 mt-xl-5 ">
             <img class="benefits-ellipse position-absolute end-0 d-none d-sm-block"
                 src="./assets/images/webp/ellipse-benefits.webp" alt="ellipse">
-            <img class="benefits-ellipse2 position-absolute start-0 d-none d-sm-block" src="./assets/images/webp/benefit-ellipse2.webp"
-                alt="ellipse">
+            <img class="benefits-ellipse2 position-absolute start-0 d-none d-sm-block"
+                src="./assets/images/webp/benefit-ellipse2.webp" alt="ellipse">
             <div class="container-lg custom-container mx-auto px-3 pb-5 pt-lg-5 ">
                 <h2
                     class="ff-norwester fw-normal mt-xl-4 text-2xl lh-120 text-ink pt-5 pb-lg-5 mb-md-5 mb-3 mb-lg-4 text-center text-lg-start">
@@ -281,17 +285,21 @@
                 class="position-absolute d-none d-lg-block stay-bg-ellipse end-0 ">
             <div class="container custom-container pb-xl-5 mb-xxl-5 px-3 pt-lg-4 mt-3 position-relative">
                 <div class="text-center py-md-5 position-relative">
-                    <h2 class="ff-norwester fw-normal text-2xl lh-120 text-ink pb-xl-5 mb-1 text-center">STAY
-                        CONNECTED</h2>
+                    <h2 class="ff-norwester fw-normal text-2xl lh-120 text-ink pb-xl-5 mb-1 text-center">Stay
+                        Connected</h2>
                     <div
                         class="d-flex flex-column-reverse flex-md-row justify-content-between gap-4 align-items-center mt-4 pt-2 mt-lg-6">
-                        <form class="d-flex flex-column max-w-100" style="max-width: 471px; width: 100%;">
-                            <input type="text" class="input-placeholder bg-transparent mb-max-24 mb-lg-36  stay-input"
+                        <form name="RegForm" onsubmit="return validateForm()" class="d-flex flex-column max-w-100"
+                            style="max-width: 471px; width: 100%;">
+                            <input type="text" id="name" name="Name"
+                                class="input-placeholder bg-transparent mb-max-24 mb-lg-36  stay-input"
                                 placeholder="Enter your Name" required>
-                            <input type="email" class="input-placeholder bg-transparent mb-max-24 mb-lg-36 stay-input"
-                                placeholder="Enter your Email" required>
-                            <button type="submit"
-                                class="fw-semibold submit-button text-md ff-inter mt-3 text-white lh-121 ">Submit</button>
+                            <span id="name-error" class="error-message"></span>
+                            <input type="email" id="email" name="EMail" class="input-placeholder bg-transparent
+                                mb-max-24 mb-lg-36 stay-input" placeholder="Enter your Email" required>
+                            <button onsubmit="handleSubmit()" type="submit"
+                                class="fw-semibold submit-button text-md ff-inter mt-3 text-white lh-121" value="Send"
+                                >Submit</button>
                         </form>
                         <img src="/assets/images/webp/stay-men.webp" alt="Stay Men"
                             class="stay-men-img w-full mt-4 mt-md-0">
@@ -304,7 +312,7 @@
         <footer class="bg-ink pt-5 mt-xl-5 position-relative pb-1">
             <div class="container  custom-container pb-2">
                 <div class="d-flex pb-1 flex-column gap-4 justify-content-center align-items-center">
-                    <img src="./assets/images/webp/logo.webp" alt="logo" class="max-w-155">
+                    <img src="./assets/images/webp/logo.webp" alt="logo" class="footer-img">
                     <div
                         class="flex d-flex justify-content-center flex-wrap align-items-center mt-3 pt-1 gap-footer-links">
                         <a href="https://www.instagram.com/" target="_blank">
@@ -334,9 +342,9 @@
                 <span id="newyear"></span> CafeGato | All Rights reserved
             </p>
             <button onclick="topFunction()" id="myBtn"
-                class="position-fixed end-0 bottom-0 me-4 mb-4 me-md-5 mb-md-5 totop-btn bg-ink"
+                class="position-fixed end-0 bottom-0 me-4 mb-4 me-md-5 mb-md-5 totop-btn border-1 border-white bg-ink"
                 title="Go to top"><span>
-                    <svg width="27" height="27" fill="#ffff" viewBox="0 0 16 16">
+                    <svg class="arrow-up" width="27" height="27" fill="#ffff" viewBox="0 0 16 16">
                         <path fillRule="evenodd"
                             d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z">
                         </path>

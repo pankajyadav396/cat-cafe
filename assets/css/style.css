@@ -102,7 +102,7 @@
 }
 
 .img-girl {
-    max-width: 209px;
+    max-width: 190px;
 }
 
 /* ============================ BENEFITS ============================ */
@@ -176,11 +176,10 @@
 }
 
 .totop-btn {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     box-shadow: 0px 0px 16px 1px var(--color-ink);
     border-radius: 100%;
-    border: none;
     display: none;
     z-index: 10;
     animation-name: backtotop;
@@ -188,6 +187,10 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+.footer-img {
+    max-width: 95px;
 }
 
 @keyframes backtotop {
@@ -238,8 +241,8 @@ input {
 }
 
 .stay-men-img {
-    max-width: 370px;
-    max-height: 373px;
+    max-width: 320px;
+    max-height: 327;
 }
 
 .mb-max-24 {
@@ -268,6 +271,7 @@ input {
 }
 
 .footer-link {
+    max-width: 30px;
     transition: all .3s linear;
 }
 
@@ -309,6 +313,12 @@ input {
     max-width: 1920px;
 }
 
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
 @media (min-width:576px) {
     .logo-img {
         max-width: 125.5px;
@@ -332,7 +342,7 @@ input {
     }
 
     .img-girl {
-        max-width: 259px;
+        max-width: 200px;
     }
 
     .orange-dressed-girl {
@@ -341,6 +351,19 @@ input {
 
     .benefits-ellipse {
         top: 90px;
+    }
+
+    .footer-img {
+        max-width: 115px;
+    }
+
+    .footer-link {
+        max-width: 37.38px;
+    }
+
+    .totop-btn {
+        height: 60px;
+        width: 60px;
     }
 }
 
@@ -355,7 +378,7 @@ input {
     }
 
     .submit-button {
-        padding: 24px 20px;
+        padding: 33px 20px;
     }
 
     .lamp-img {
@@ -372,7 +395,7 @@ input {
     }
 
     .img-girl {
-        max-width: 300px;
+        max-width: 250px;
     }
 
     .ellipse-header {
@@ -393,6 +416,10 @@ input {
         top: 0%;
         right: 4%;
         z-index: -2;
+    }
+
+    .footer-img {
+        max-width: 155.3px;
     }
 
     .thank-box {
@@ -455,7 +482,7 @@ input {
     }
 
     .img-girl {
-        max-width: 459px;
+        max-width: 380px;
     }
 
     .journey-bg-ellipse {
@@ -502,6 +529,10 @@ input {
 
     .lamp-img {
         max-width: 712px;
+    }
+
+    .img-girl {
+        max-width: 459px;
     }
 
     .stay-bg-ellipse {
@@ -558,5 +589,15 @@ input {
     .mission-bg-ellipse {
         transform: translateY(-40%);
         min-width: 1020px;
+    }
+
+    .totop-btn {
+        height: 80px;
+        width: 80px;
+    }
+
+    .arrow-up {
+        width: 40px !important;
+        height: 40px !important;
     }
 }
